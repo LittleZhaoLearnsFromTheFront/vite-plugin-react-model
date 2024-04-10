@@ -1,0 +1,45 @@
+{
+  "name": "vite-plugin-react-model",
+  "private": false,
+  "version": "1.0.0",
+  "description": "类似于umi的useModel",
+  "main": "dist/index.mjs",
+  "type": "module",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "homepage": "https://github.com/LittleZhaoLearnsFromTheFront",
+  "scripts": {
+    "build": "unbuild",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "src/model.tsx",
+    "src/@@initialState.ts",
+    "src/provider.tsx"
+  ],
+  "keywords": [
+    "vite",
+    "plugin",
+    "javaScript",
+    "typeScript"
+  ],
+  "author": "zhaohx0409@163.com",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">16.0.0",
+    "react-dom": ">16.0.0",
+    "antd": ">4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.6",
+    "antd": "^5.16.1",
+    "react": "^18.2.0",
+    "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "fast-deep-equal": "^3.1.3"
+  }
+}
